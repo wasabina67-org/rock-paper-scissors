@@ -17,6 +17,14 @@ def main():
     # Determine the winner
     if player_choice == computer_choice:
         result = "It's draw!"
+    elif (
+        (player_choice == "Rock" and computer_choice == "Scissors")
+        or (player_choice == "Paper" and computer_choice == "Rock")
+        or (player_choice == "Scissors" and computer_choice == "Paper")
+    ):
+        result = "You win!"
+    else:
+        result = "You lose!"
     print(result)
 
 
