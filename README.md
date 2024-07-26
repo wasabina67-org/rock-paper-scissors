@@ -18,4 +18,8 @@ docker run -it --rm --name rock-paper-scissors wasabina67/rock-paper-scissors:la
 ## Example
 
 ```bash
+$ docker run -it --rm --name rock-paper-scissors wasabina67/rock-paper-scissors:latest
+Choose Rock, Paper, or Scissors: Rock
+Computer chose: Scissors
+You win!
 ```
