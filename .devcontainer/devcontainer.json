@@ -7,7 +7,11 @@
 		"context": "..",
 		// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
 		"dockerfile": "../Dockerfile.dev"
-	}
+	},
+
+	"runArgs": ["--name=rock-paper-scissors"],
+
+	"mounts": ["source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind"],
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -19,7 +23,21 @@
 	// "postCreateCommand": "cat /etc/os-release",
 
 	// Configure tool-specific properties.
-	// "customizations": {},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"eamodio.gitlens",
+				"mhutchie.git-graph",
+				"ms-python.debugpy",
+				"ms-python.flake8",
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"njpwerner.autodocstring",
+				"oderwat.indent-rainbow",
+				"shardulm94.trailing-spaces"
+			]
+		}
+	}
 
 	// Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "devcontainer"
