@@ -14,6 +14,11 @@ def main():
     computer_choice = random.choice(options)
     print(f"Computer chose: {computer_choice}")
 
+    # Determine the winner
+    if player_choice == computer_choice:
+        result = "It's draw!"
+    print(result)
+
 
 if __name__ == "__main__":
     main()
