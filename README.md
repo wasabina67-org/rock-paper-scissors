@@ -8,7 +8,9 @@ Rock paper scissors
 ## QuickStart
 
 ```bash
+docker pull wasabina67/rock-paper-scissors:latest
 ```
 
 ```bash
+docker run -it --rm --name rock-paper-scissors wasabina67/rock-paper-scissors:latest
 ```
