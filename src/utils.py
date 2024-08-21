@@ -18,3 +18,17 @@ class Options(Enum):
 
 def get_computer_choice():
     return random.choice(Options.get_names())
+
+
+def determine_winner(player_choice, computer_choice):
+    if player_choice == computer_choice:
+        result = "It's draw!"
+    elif (
+        (player_choice == "Rock" and computer_choice == "Scissors")
+        or (player_choice == "Paper" and computer_choice == "Rock")
+        or (player_choice == "Scissors" and computer_choice == "Paper")
+    ):
+        result = "You win!"
+    else:
+        result = "You lose!"
+    return result
