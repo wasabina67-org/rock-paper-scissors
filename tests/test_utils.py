@@ -16,7 +16,7 @@ def test_get_computer_choice():
 
 
 @pytest.mark.parametrize(
-    "player_choice", "computer_choice", "expected_result",
+    "player_choice, computer_choice, expected_result",
     [
         (Options.ROCK.value, Options.SCISSORS.value, "You win!")
     ]
