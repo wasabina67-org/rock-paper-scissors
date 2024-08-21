@@ -1,8 +1,10 @@
 import random
 
+from utils import Options
+
 
 def main():
-    options = ["Rock", "Paper", "Scissors"]
+    options = Options.get_names()
 
     # Player's input
     player_choice = input("Choose Rock, Paper, or Scissors: ")
