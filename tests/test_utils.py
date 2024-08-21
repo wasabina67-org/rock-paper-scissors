@@ -15,7 +15,7 @@ def test_get_computer_choice():
     assert get_computer_choice() in Options.get_values()
 
 
-@pytest.parametrize(
+@pytest.mark.parametrize(
     "player_choice", "computer_choice", "expected_result",
     [
         (Options.ROCK.value, Options.SCISSORS.value, "You win!")
