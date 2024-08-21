@@ -1,6 +1,6 @@
 import pytest
 
-from src.utils import Options, determine_winner, get_computer_choice
+from src.utils import Options, determine_winner, get_computer_choice, to_int
 
 
 def test_options_get_names():
@@ -25,3 +25,13 @@ def test_get_computer_choice():
 )
 def test_determine_winner(player_choice, computer_choice, expected_result):
     assert determine_winner(player_choice, computer_choice) == expected_result
+
+
+@pytest.mark.parametrize(
+    "num, expected_num",
+    [
+        ("1", 1)
+    ]
+)
+def test_to_int(num, expected_num):
+    assert to_int(num) == expected_num
