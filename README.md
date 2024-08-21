@@ -23,3 +23,10 @@ Choose Rock(1), Paper(2), or Scissors(3): 1
 Computer chose: Rock(1)
 It's draw!
 ```
+
+```bash
+$ docker run -it --rm --name rock-paper-scissors wasabina67/rock-paper-scissors:latest
+Choose Rock(1), Paper(2), or Scissors(3): 3
+Computer chose: Paper(2)
+You win!
+```
