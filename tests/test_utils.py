@@ -20,7 +20,10 @@ def test_get_computer_choice():
     [
         (Options.ROCK.value, Options.SCISSORS.value, "You win!"),
         (Options.PAPER.value, Options.ROCK.value, "You win!"),
-        (Options.SCISSORS.value, Options.PAPER.value, "You win!")
+        (Options.SCISSORS.value, Options.PAPER.value, "You win!"),
+        (Options.ROCK.value, Options.PAPER.value, "You lose!"),
+        (Options.PAPER.value, Options.SCISSORS.value, "You lose!"),
+        (Options.SCISSORS.value, Options.ROCK.value, "You lose!")
     ]
 )
 def test_determine_winner(player_choice, computer_choice, expected_result):
