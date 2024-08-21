@@ -32,3 +32,10 @@ def determine_winner(player_choice, computer_choice):
     else:
         result = "You lose!"
     return result
+
+
+def to_int(num):
+    try:
+        return int(num)
+    except (ValueError, TypeError):
+        return ""
