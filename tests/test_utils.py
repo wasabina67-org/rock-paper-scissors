@@ -32,7 +32,10 @@ def test_determine_winner(player_choice, computer_choice, expected_result):
     [
         ("1", 1),
         ("2", 2),
-        ("3", 3)
+        ("3", 3),
+        ("abc", ""),
+        (None, ""),
+        (1.23, 1)
     ]
 )
 def test_to_int(num, expected_num):
