@@ -1,4 +1,6 @@
-from src.utils import Options, get_computer_choice
+import pytest
+
+from src.utils import Options, determine_winner, get_computer_choice
 
 
 def test_options_get_names():
@@ -11,3 +13,13 @@ def test_options_get_values():
 
 def test_get_computer_choice():
     assert get_computer_choice() in Options.get_values()
+
+
+@pytest.parametrize(
+    "player_choice", "computer_choice", "expected_result",
+    [
+        (Options.ROCK.value, Options.SCISSORS.value, "You win!")
+    ]
+)
+def test_determine_winner(player_choice, computer_choice, expected_result):
+    assert determine_winner(player_choice, computer_choice) == expected_result
