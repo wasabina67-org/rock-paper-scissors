@@ -1,6 +1,4 @@
-import random
-
-from utils import Options
+from utils import Options, get_computer_choice
 
 
 def main():
@@ -13,7 +11,7 @@ def main():
         return
 
     # Computer's choice
-    computer_choice = random.choice(options)
+    computer_choice = get_computer_choice()
     print(f"Computer chose: {computer_choice}")
 
     # Determine the winner

@@ -17,4 +17,4 @@ class Options(Enum):
 
 
 def get_computer_choice():
-    return random.choice(Options.get_values())
+    return random.choice(Options.get_names())
