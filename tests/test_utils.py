@@ -26,8 +26,8 @@ def test_get_computer_choice():
         (Options.SCISSORS.value, Options.ROCK.value, "You lose!"),
         (Options.ROCK.value, Options.ROCK.value, "It's draw!"),
         (Options.PAPER.value, Options.PAPER.value, "It's draw!"),
-        (Options.SCISSORS.value, Options.SCISSORS.value, "It's draw!")
-    ]
+        (Options.SCISSORS.value, Options.SCISSORS.value, "It's draw!"),
+    ],
 )
 def test_determine_winner(player_choice, computer_choice, expected_result):
     assert determine_winner(player_choice, computer_choice) == expected_result
@@ -35,14 +35,7 @@ def test_determine_winner(player_choice, computer_choice, expected_result):
 
 @pytest.mark.parametrize(
     "num, expected_num",
-    [
-        ("1", 1),
-        ("2", 2),
-        ("3", 3),
-        ("abc", ""),
-        (None, ""),
-        (1.23, 1)
-    ]
+    [("1", 1), ("2", 2), ("3", 3), ("abc", ""), (None, ""), (1.23, 1)],
 )
 def test_to_int(num, expected_num):
     assert to_int(num) == expected_num
