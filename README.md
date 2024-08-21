@@ -19,7 +19,7 @@ docker run -it --rm --name rock-paper-scissors wasabina67/rock-paper-scissors:la
 
 ```bash
 $ docker run -it --rm --name rock-paper-scissors wasabina67/rock-paper-scissors:latest
-Choose Rock, Paper, or Scissors: Rock
-Computer chose: Scissors
-You win!
+Choose Rock(1), Paper(2), or Scissors(3): 1
+Computer chose: Rock(1)
+It's draw!
 ```
