@@ -17,7 +17,7 @@ class Options(Enum):
 
 
 def get_computer_choice():
-    return random.choice(Options.get_names())
+    return random.choice(Options.get_values())
 
 
 def determine_winner(player_choice, computer_choice):
