@@ -15,7 +15,7 @@ def main():
     print(f"Computer chose: {computer_choice}")
 
     # Determine the winner
-    print(determine_winner())
+    print(determine_winner(player_choice, computer_choice))
 
 
 if __name__ == "__main__":
