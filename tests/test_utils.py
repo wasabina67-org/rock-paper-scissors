@@ -30,7 +30,9 @@ def test_determine_winner(player_choice, computer_choice, expected_result):
 @pytest.mark.parametrize(
     "num, expected_num",
     [
-        ("1", 1)
+        ("1", 1),
+        ("2", 2),
+        ("3", 3)
     ]
 )
 def test_to_int(num, expected_num):
