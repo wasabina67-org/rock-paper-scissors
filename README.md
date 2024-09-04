@@ -7,6 +7,12 @@ Rock paper scissors 🪨📃✂️
 
 ## QuickStart
 
+<details><summary>rock_paper_scissors.mp4</summary>
+
+<video controls src="https://github.com/user-attachments/assets/0a81f397-f8d8-4256-8c8c-d57537218219" muted="false"></video>
+
+</details>
+
 ```bash
 docker pull wasabina67/rock-paper-scissors:latest
 ```
